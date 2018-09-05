@@ -1,0 +1,24 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1>YouTube Search
+    </h1>
+    <p><i class="copyright icon"></i> By jezusamen</p>
+    
+  </div>
+
+  <div class="row">
+    <div class="search-box input-group input-group-lg col-md-12">
+      <app-search-box (results)="updateResults($event)"></app-search-box>
+    </div>
+
+    <div class="card-container">
+      <div class="row ui link cards">
+        <app-youtube-card
+          *ngFor="let result of results" [youtubeResult]="result">
+        </app-youtube-card>
+      </div>
+    </div>
+  </div>
+
+</div>

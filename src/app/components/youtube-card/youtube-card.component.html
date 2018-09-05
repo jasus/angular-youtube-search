@@ -1,0 +1,12 @@
+<div class="image">
+  <img src="{{youtubeResult.$thumbnailUrl}}">
+</div>
+<div class="content">
+  <a class="header" href="{{youtubeResult.$videoUrl}}" target="_blank">{{youtubeResult.$title}}</a>
+  <div class="meta">
+    <span class="date">{{youtubeResult.$publishedAt | date}}</span>
+  </div>
+  <div class="description">
+    {{youtubeResult.$description}}
+  </div>
+</div>
